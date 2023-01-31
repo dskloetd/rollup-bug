@@ -28,3 +28,5 @@ But you don't need to load index.html to observe the issue. Inspect
 `output/main.js` and notice that several modules are not inside a "require
 wrapper" while all but `main.js` and `module1.js` have a circular dependency on
 each other.
+
+Note that the order in which the modules are loaded is not deterministic and depends on when the filesystem responds. It might be possible to reproduce the bug with fewer files but that also makes it more likely that the bug accidentally doesn't happen.
