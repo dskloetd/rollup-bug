@@ -1,0 +1,17 @@
+{
+  "name": "is-cyclic-bug",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "serve": "python3 -m http.server",
+    "clean": "rm -rf node_modules output"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0"
+  },
+  "dependencies": {
+    "rollup": "^3.12.0"
+  }
+}
