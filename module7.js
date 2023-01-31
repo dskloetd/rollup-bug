@@ -1,7 +1,7 @@
-//const m2 = require('./module2.js');
+const m2 = require('./module2.js');
 
 console.log('module7 loaded');
-//m2.inc();
+m2.inc();
 
 let counter = 0
 

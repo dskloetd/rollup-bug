@@ -20,4 +20,11 @@ V     V             |
 7 --> 2 <=> 3 ----> 8
 ```
 
-If the dependency from `module3.js` to `module2.js` is removed, then everything works fine. But as it is, loading index.html fails with `main.js:97 Uncaught TypeError: m2.inc is not a function`.
+If the dependency from `module3.js` to `module2.js` is removed, then everything
+works fine. But as it is, loading index.html fails with `main.js:97 Uncaught
+TypeError: m2.inc is not a function`.
+
+But you don't need to load index.html to observe the issue. Inspect
+`output/main.js` and notice that several modules are not inside a "require
+wrapper" while all but `main.js` and `module1.js` have a circular dependency on
+each other.
