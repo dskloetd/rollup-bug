@@ -1,5 +1,7 @@
 # Rollup CommonJs plug isCyclic bug repro
 
+The issue in the rollup/plugin repo: https://github.com/rollup/plugins/issues/1425
+
 The CommonJS plugin in rollup has a bug where it sometimes fails to detect a
 circular dependency. The issue that [this call to isCyclic](https://github.com/rollup/plugins/blob/69146cdf1f7353aa72364f69fa5e49c732a1abd8/packages/commonjs/src/resolve-require-sources.js#L72)
 happens before the dependency graph is fully built and so
