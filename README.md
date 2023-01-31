@@ -14,7 +14,7 @@ The dependency graph between the modules in the repo is like this:
 5 <-- 4 <-- 11 <-- 10
 |     ^             ^
 V     |             |
-6     1             9
+6     1 <-- main    9
 |     |             ^
 V     V             |
 7 --> 2 <=> 3 ----> 8
