@@ -21,8 +21,8 @@ V     V             |
 ```
 
 If the dependency from `module3.js` to `module2.js` is removed, then everything
-works fine. But as it is, loading index.html fails with `main.js:97 Uncaught
-TypeError: m4.inc is not a function`.
+works fine. But as it is, loading index.html fails with `TypeError: m4.inc is
+not a function`.
 
 But you don't need to load index.html to observe the issue. Inspect
 `output/main.js` and notice that several modules are not inside a "require
